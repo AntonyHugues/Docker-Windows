@@ -1,5 +1,5 @@
-# Exécuter Windows Update
-# TODO - vous devrez le faire manuellement avec `sconfig`, si la mise à jour nécessite un redémarrage
+# Exï¿½cuter Windows Update
+# TODO - vous devrez le faire manuellement avec `sconfig`, si la mise ï¿½ jour nï¿½cessite un redï¿½marrage
 
 Install-Module -Name PSWindowsUpdate -Force
 Import-Module PSWindowsUpdate
@@ -15,7 +15,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 choco install -y poshgit
 choco install -y firefox
-
+choco install -y visualstudiocode
 
 # Installation de Docker
 
@@ -29,7 +29,7 @@ Install-Package Docker -ProviderName DockerProvider -Force
 Invoke-WebRequest "https://github.com/docker/compose/releases/download/1.19.0/docker-compose-Windows-x86_64.exe" -UseBasicParsing -OutFile $Env:ProgramFiles\docker\docker-compose.exe 
 
 
-# Désactiver le pare-feu et Defender 
+# Dï¿½sactiver le pare-feu et Defender 
 
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 Set-MpPreference -DisableRealtimeMonitoring $true
